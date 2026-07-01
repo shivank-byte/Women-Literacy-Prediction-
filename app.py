@@ -457,7 +457,9 @@ with tab3:
         unsafe_allow_html=True
     )
 
+    bp_str = str(best_params)
     st.markdown(
-        f'<div class="method-note">🔧 <b>Hyperparameter tuning (GridSearchCV, 5-fold):</b> Searched over '
-        f'n_estimators ∈ {{100, 200}}, max_depth ∈ {{5, 8, 12}}, min_samples_leaf ∈ {{1, 3}}. '
-        f'Best parameters: <code>{best_params}</code>. D
+        '<div class="method-note">🔧 <b>Hyperparameter tuning (GridSearchCV, 5-fold):</b> '
+        'Searched over n_estimators, max_depth, min_samples_leaf. '
+        'Best parameters: <code>' + bp_str + '</code>. '
+        'Def
